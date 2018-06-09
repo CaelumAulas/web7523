@@ -1,0 +1,23 @@
+.jogoDaVelha {
+  font-family: Roboto, sans-serif;
+}
+
+.jogoDaVelha-celula {
+  font-size: 120px;
+  box-sizing: border-box;
+  float: left;
+  width: 40vw;
+  height: 33.333vh;
+  line-height: 33.333vh;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.jogoDaVelha-celula:hover,
+.jogoDaVelha-celula:focus {
+  background-color: #dfe6e9;
+}
+
+.jogoDaVelha-celula:nth-child(3n+2) {
+  width: 20vw;
+}
