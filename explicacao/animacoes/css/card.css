@@ -1,0 +1,23 @@
+.card {
+  background-color: #0984e3;
+  color: #edf1f3;
+  position: relative;
+  padding: 20px 15px;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: transform 400ms ease-in-out;
+}
+
+.card_isRemove {
+  transform: translateX(-100%)
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.card-subtitle {
+  font-size: 16px;
+}
