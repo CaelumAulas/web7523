@@ -1,0 +1,7 @@
+.colocaCor {
+  background-color: #000000;
+}
+
+input {
+  background-color: attr('value')
+}
