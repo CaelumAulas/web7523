@@ -1,28 +1,33 @@
 ;(function (doc) {
   'use strict'
   
-  const $jogoDaVelhaCelulas = doc.querySelectorAll('.jogoDaVelha-celula')
+  const $jogoDaVelha = document.querySelector('.jogoDaVelha')
 
-  $jogoDaVelhaCelulas.forEach(function($jogoDaVelhaCelula) {
-    $jogoDaVelhaCelula.addEventListener('keyup', function(event) {
-      console.log(event)
+  $jogoDaVelha.addEventListener('keyup', function(event) {
+    const $jogoDaVelhaCelula = event.target
 
+    if($jogoDaVelhaCelula.classList.contains('jogoDaVelha-celula')) {
       const teclasQuePode = []
       teclasQuePode[88] = 'x'
       teclasQuePode[79] = 'o'
   
       console.log(teclasQuePode[event.keyCode])
   
-      this.textContent = teclasQuePode[event.keyCode] || 'eita'
-  
-      // if (event.keyCode == 88) {
-      //   this.textContent = 'x'
-      // }
-  
-      // if (event.keyCode == 79) {
-      //   this.textContent = 'o'
-      // }
-      
-    })
+      $jogoDaVelhaCelula.textContent = teclasQuePode[event.keyCode] || 'eita'  
+    }
   })
+
+  // const $jogoDaVelhaCelulas = doc.querySelectorAll('.jogoDaVelha-celula')
+
+  // $jogoDaVelhaCelulas.forEach(function($jogoDaVelhaCelula) {
+  //   $jogoDaVelhaCelula.addEventListener('keyup', function(event) {
+  //     const teclasQuePode = []
+  //     teclasQuePode[88] = 'x'
+  //     teclasQuePode[79] = 'o'
+  
+  //     console.log(teclasQuePode[event.keyCode])
+  
+  //     this.textContent = teclasQuePode[event.keyCode] || 'eita'  
+  //   })
+  // })
 })(document)

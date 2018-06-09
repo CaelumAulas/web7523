@@ -1,5 +1,13 @@
 .jogoDaVelha {
+  overflow: hidden;
+  display: table-cell;
   font-family: Roboto, sans-serif;
+}
+
+.jogoDaVelha::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .jogoDaVelha-celula {
